@@ -7,6 +7,9 @@
     "url": "???"
   },
   "license": "MIT",
+  "scripts": {
+    "postinstall": "npm --prefix ./node_modules/\\@atlassian/aui install node_modules/\\@atlassian/aui && npm --prefix ./node_modules/\\@atlassian/aui run dist && mv ./node_modules/\\@atlassian/aui/dist ./lib"
+  },
   "dependencies": {
     "aurelia-bootstrapper": "^1.0.0-rc.1.0.0",
     "aurelia-fetch-client": "^1.0.0-rc.1.0.0",
